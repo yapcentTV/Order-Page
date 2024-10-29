@@ -226,8 +226,19 @@ html, body {
  text-shadow: 1px 1px aliceblue;
 }
 
-.order-section h3 span{
-font-weight: 400;
+.order-section .gibo h3 span{
+ font-weight: 400;
+ color: black;
+}
+
+.order-section .gibo p{
+ color: #212529;
+ font-weight: 700;
+}
+
+.order-section .gibo p span{
+ font-weight: 400;
+ color: black;
 }
 
 .order-section .gibo {
@@ -243,14 +254,15 @@ font-weight: 400;
   width: 100%;
 }
 
-.order-section .total strong{
+.order-section .gibo .total strong{
  color: #212529;
  font-weight: 700;
  text-shadow: 1px 1px aliceblue;
 }
 
-.order-section .total strong span{
+.order-section .gibo .total strong span{
  font-weight: 400;
+ color: black;
 }
 
 .order-section input {
