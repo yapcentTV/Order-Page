@@ -90,6 +90,10 @@ html, body {
     font-weight: 600;
 }
 
+.items .item .box-1 p .line{
+   text-decoration: line-through;
+}
+
 .items .item .box-2{
     display: flex;
     flex-direction: column;
@@ -109,6 +113,10 @@ html, body {
     font-weight: 600;
 }
 
+.items .item .box-2 p .line{
+    text-decoration: line-through;
+ }
+
 .items .item .box-3{
     display: flex;
     flex-direction: column;
@@ -116,8 +124,12 @@ html, body {
     place-items: center;
     padding: 10px;
     gap: 10px;
-    border: 2px solid black;
+    border: 2px solid #adb5bd;
 }
+
+.items .item .box-3 p .line{
+    text-decoration: line-through;
+ }
 
 .items .item .box-3:hover{
     box-shadow: unset;
