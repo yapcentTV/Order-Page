@@ -28,14 +28,32 @@ html, body {
 .align h1{
    position: relative;
    font-family: "Carter One", sans-serif;
-   font-size: 2.5rem;
+   font-size: 3rem;
+   background-image: url(../img/paint.jpg);
+   background-size: contain;
+   background-position: center;
+   color: transparent;
+   background-clip: text;
+   -webkit-background-clip: text;
+   animation: slide 15s linear infinite;
 }
+
+@keyframes slide{
+  to{
+   background-position-x: 250px;
+  }
+}
+
+.align h1:hover{
+  animation-play-state: paused;
+}
+
 .align h1::after{
     position: absolute;
     inset: 0 0 0 0;
     content: attr(data-content);
     z-index: 2;
-    -webkit-text-stroke: .3px teal;
+    -webkit-text-stroke: .3px #177e89;
     color: transparent;
   }
 
