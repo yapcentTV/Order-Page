@@ -53,7 +53,7 @@ html, body {
     position: relative;
     align-items: center;
     justify-self: center;
-    gap: 30px
+    gap: 50px
 }
 
 .items .item {
@@ -66,6 +66,11 @@ html, body {
     transition: transform 0.3s;
 }
 
+.items .item h2{
+   font-size: 1.2em;
+   margin-block-start: 20px;
+}
+
 .items .item .box-1{
     display: flex;
     flex-direction: column;
@@ -74,6 +79,10 @@ html, body {
     padding: 10px;
     gap: 10px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.items .item .box-1 p b{
+    font-weight: 600;
 }
 
 .items .item .box-2{
@@ -86,6 +95,10 @@ html, body {
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
+.items .item .box-2 p b{
+    font-weight: 600;
+}
+
 .items .item .box-3{
     display: flex;
     flex-direction: column;
@@ -94,6 +107,10 @@ html, body {
     padding: 10px;
     gap: 10px;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.items .item .box-3 p b{
+    font-weight: 600;
 }
 
 .items .item img{
