@@ -19,7 +19,7 @@ function placeOrder() {
     }
     const quantity = document.getElementById("quantity").value;
     const totalAmount = itemPrice * quantity;
-    alert(`Order placed for ${quantity} x ${selectedItem} - Total: $${totalAmount}`);
+    alert(`Order placed for ${quantity} x ${selectedItem} - Total: ₱${totalAmount}`);
     resetOrder();
 }
 function cancelOrder() {
