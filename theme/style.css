@@ -185,8 +185,19 @@ html, body {
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+    padding: 20px;
+    background: #212529;
     height: fit-content;
     width: 100%;
+}
+
+.sep{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 750px;
 }
 
 .order-section {
@@ -197,7 +208,6 @@ html, body {
     background: teal;
     padding: 20px;
     gap: 20px;
-    margin-top: 20px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     height: fit-content;
     width: 100%;
