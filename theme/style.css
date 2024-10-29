@@ -21,14 +21,23 @@ html, body {
     position: relative;
     align-items: center;
     justify-content: center;
+    margin-block: 30px;
     height: fit-content;
     width: 100%;
 }
 .align h1{
+   position: relative;
    font-family: "Carter One", sans-serif;
    font-size: 2.5rem;
-   padding: 20px;
 }
+.align h1::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: .3px teal;
+    color: transparent;
+  }
 
 .bg{
     display: flex;
