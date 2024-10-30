@@ -23,6 +23,7 @@ html, body {
     justify-content: center;
     margin-block-start: 30px;
     height: fit-content;
+    min-width: 750px;
     width: 100%;
 }
 .align h1{
@@ -64,6 +65,7 @@ html, body {
     justify-content: center;
     height: fit-content;
     padding: 20px;
+    min-width: 750px;
     width: 100%;
 }
 
@@ -169,9 +171,20 @@ html, body {
   transition: all 450ms;
 }
 
-.items .item img:hover{
-   transform: scale(1.055);
-}
+.items .item img:not(:hover) {
+    transform: scale(1.055);
+    -webkit-filter: saturate(1.2);
+    filter: saturate(1.2);
+    -webkit-filter: contrast(1.2);
+    filter: contrast(1.2);
+          opacity: 1;
+  }
+
+  .items .item img:hover{
+    -webkit-filter: grayscale(1.2);
+    filter: grayscale(1.2);
+      opacity: .75;
+  }
 
 .items .item .box-3:nth-child(1){
    display: flex;
@@ -218,7 +231,7 @@ html, body {
     align-items: center;
     justify-content: center;
     height: fit-content;
-    width: 750px;
+    width: 850px;
 }
 
 .order-section {
@@ -241,6 +254,7 @@ html, body {
     border-radius: 8px;
     position: relative;
     align-items: center;
+    justify-content: center;
     padding: 10px;
     height: fit-content;
     width: 100%;
@@ -248,7 +262,7 @@ html, body {
 }
 
 .order-section .heady h1{
-    text-align: left;
+font-family: "Montserrat", sans-serif;
 }
 
 .order-section h3{
@@ -286,20 +300,86 @@ html, body {
   width: 100%;
 }
 
-.order-section .gibo .total strong{
- color: #212529;
- font-weight: 700;
- text-shadow: 1px 1px aliceblue;
+.order-section .gibo .char{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
 }
 
-.order-section .gibo .total strong span{
- font-weight: 400;
- color: black;
+.order-section .gibo .one{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
 }
 
-.order-section input {
-    margin-top: 5px;
+.order-section .gibo .select{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+}
+
+.order-section .gibo .per{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: fit-content;
+    width: 100%;
+  }
+
+.order-section .place {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.order-section .place .label-1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 7px;
+    height: fit-content;
+    width: 100%;
+}
+
+.order-section .place .label-2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    height: fit-content;
+    width: 80%;
+}
+
+.order-section .place input::placeholder{
+    color: #212529;
+}
+
+.order-section .place .label-1 input {
     width: 75px;
+}
+
+.order-section .place .label-2 input {
+    width: 100px;
 }
 
 .total, .buttons {
@@ -307,11 +387,38 @@ html, body {
     margin-top: 10px;
 }
 
+.order-section .gibo .result{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: fit-content;
+    width: 100%;
+}
+
+.order-section .gibo .total strong{
+    color: #212529;
+    font-weight: 700;
+    text-shadow: 1px 1px aliceblue;
+   }
+   
+.order-section .gibo .total strong span{
+    font-weight: 400;
+    color: black;
+  }
+
+.order-section .gibo .buttons{
+    display: flex;
+    position: relative;
+}
+
 .order-section .buttons .btn {
-    gap: 20px;
     padding: 5px 8px;
     border-radius: 5px;
 }
+
 .order-section .buttons .btn:hover{
     background: teal;
     color: aliceblue;
